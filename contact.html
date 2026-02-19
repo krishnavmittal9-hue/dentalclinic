@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Us - Bright Smile Dental</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f7fb;
+}
+
+nav {
+  background:#0a58ca;
+  padding:15px;
+}
+
+nav ul {
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin:0;
+  padding:0;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover { color:#ffd166; }
+
+.container {
+  max-width:800px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+h1 {
+  text-align:center;
+  color:#0a58ca;
+  margin-bottom:40px;
+}
+
+.contact-section {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:start;
+}
+
+.contact-info {
+  background:#ffffff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+  color:#0a58ca;
+  margin-bottom:20px;
+}
+
+.contact-info p, .contact-info li {
+  color:#333;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.contact-info ul {
+  list-style:none;
+  padding:0;
+}
+
+.contact-form {
+  background:#ffffff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+.input-group {
+  position:relative;
+  margin-bottom:20px;
+}
+
+input, textarea {
+  width:100%;
+  padding:14px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:14px;
+  outline:none;
+}
+
+textarea {
+  resize:none;
+}
+
+label {
+  position:absolute;
+  left:14px;
+  top:14px;
+  color:#888;
+  font-size:13px;
+  pointer-events:none;
+  background:white;
+  padding:0 4px;
+  transition:0.3s;
+}
+
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label {
+  top:-8px;
+  font-size:11px;
+  color:#0a58ca;
+}
+
+button {
+  width:100%;
+  padding:14px;
+  background:#0a58ca;
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover {
+  background:#084298;
+}
+
+footer {
+  background:#0a58ca;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:40px;
+}
+
+@media(max-width:768px){
+  .contact-section {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="query.html">Query</a></li>
+</ul>
+</nav>
+
+<div class="container">
+<h1>Contact Us</h1>
+
+<div class="contact-section">
+
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>We would love to hear from you. Reach out to us using the details below or send a message directly through the form.</p>
+    <ul>
+      <li>📍 Panipat, Haryana</li>
+      <li>📞 +91 9XXXXXXXXX</li>
+      <li>✉️ clinic@email.com</li>
+      <li>🕒 Mon – Sat: 9 AM – 7 PM</li>
+    </ul>
+  </div>
+
+  <!-- Contact Form -->
+  <form class="contact-form" action="send.php" method="POST">
+  <input type="hidden" name="form_type" value="contact">
+
+  <div class="input-group">
+    <input type="text" name="name" required>
+    <label>Full Name</label>
+  </div>
+
+  <div class="input-group">
+    <input type="email" name="email" required>
+    <label>Email Address</label>
+  </div>
+
+  <div class="input-group">
+    <input type="tel" name="phone" pattern="[0-9]{10}" required>
+    <label>Phone Number</label>
+  </div>
+
+  <div class="input-group">
+    <textarea name="message" rows="5" required></textarea>
+    <label>Your Message</label>
+  </div>
+
+  <button type="submit">Send Message</button>
+</form>
+
+
+<footer>
+© 2026 Bright Smile Dental Clinic
+</footer>
+
+</body>
+</html>

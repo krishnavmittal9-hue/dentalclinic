@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Us - Bright Smile Dental</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f7fb;
+}
+
+nav{
+  background:#0a58ca;
+  padding:15px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin:0;
+  padding:0;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{ color:#ffd166; }
+
+.hero{
+  background: linear-gradient(rgba(10,88,202,0.8), rgba(10,88,202,0.8)),
+  url("https://images.unsplash.com/photo-1588776814546-daab30f310ce");
+  background-size: cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
+
+.hero h1{
+  margin:0;
+  font-size:38px;
+}
+
+.hero p{
+  margin-top:10px;
+  font-size:18px;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.about-text{
+  text-align:center;
+  color:#555;
+  line-height:1.7;
+  font-size:17px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:25px;
+  margin-top:35px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h3{
+  color:#0a58ca;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#555;
+  font-size:15px;
+  line-height:1.6;
+}
+
+footer{
+  background:#0a58ca;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="query.html">Query</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+  <h1>About Bright Smile Dental</h1>
+  <p>Dedicated to healthy smiles and gentle care</p>
+</div>
+
+<div class="container">
+
+  <p class="about-text">
+  Bright Smile Dental Clinic provides advanced dental treatments in a friendly and comfortable environment. 
+  We combine modern technology with compassionate care to ensure every patient receives safe, painless, 
+  and effective treatment.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To deliver high-quality dental care with comfort, safety, and advanced technology.</p>
+    </div>
+
+    <div class="card">
+      <h3>Modern Technology</h3>
+      <p>We use the latest equipment and techniques for accurate diagnosis and effective treatment.</p>
+    </div>
+
+    <div class="card">
+      <h3>Patient Comfort</h3>
+      <p>We prioritize gentle procedures and a relaxing environment for stress-free visits.</p>
+    </div>
+
+    <div class="card">
+      <h3>Trusted Care</h3>
+      <p>Hundreds of patients trust us for reliable, affordable, and long-lasting dental solutions.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+© 2026 Bright Smile Dental Clinic
+</footer>
+
+</body>
+</html>
